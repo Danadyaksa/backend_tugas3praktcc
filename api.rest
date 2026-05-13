@@ -1,14 +1,14 @@
-# API Testing
-GET http://localhost:3000/ HTTP/1.1
+# API Testing (Health Check)
+GET https://backend-134-820401822458.us-central1.run.app/ HTTP/1.1
 
 ###
 # GET : All Notes
-GET http://localhost:3000/api/v1/notes HTTP/1.1
+GET https://backend-134-820401822458.us-central1.run.app/api/v1/notes HTTP/1.1
 Content-Type: application/json
 
 ###
 # POST : Create Note
-POST http://localhost:3000/api/v1/notes HTTP/1.1
+POST https://backend-134-820401822458.us-central1.run.app/api/v1/notes HTTP/1.1
 Content-Type: application/json
 
 {
@@ -18,20 +18,23 @@ Content-Type: application/json
 
 ###
 # GET : Note by ID
-GET http://localhost:3000/api/v1/notes/1 HTTP/1.1
+# (PENTING: Ganti angka 1 di bawah dengan ID asli yang ada di database)
+GET https://backend-134-820401822458.us-central1.run.app/api/v1/notes/1 HTTP/1.1
 Content-Type: application/json
 
 ###
 # PUT : Update Note
-PUT http://localhost:3000/api/v1/notes/1 HTTP/1.1
+# (PENTING: Ganti angka 1 di bawah dengan ID asli yang ada di database)
+PUT https://backend-134-820401822458.us-central1.run.app/api/v1/notes/1 HTTP/1.1
 Content-Type: application/json
 
 {
   "judul": "ini update",
-  "isi": "notenya update"
+  "isi": "notenya update via Cloud Run"
 }
 
 ###
 # DELETE : Delete Note
-DELETE http://localhost:3000/api/v1/notes/1 HTTP/1.1
+# (PENTING: Ganti angka 1 di bawah dengan ID asli yang ada di database)
+DELETE https://backend-134-820401822458.us-central1.run.app/api/v1/notes/1 HTTP/1.1
 Content-Type: application/json
