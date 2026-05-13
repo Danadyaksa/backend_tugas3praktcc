@@ -13,7 +13,7 @@ steps:
         'deploy',
         'backend-134',
         '--image',
-        'gcr.io/$PROJECT_ID/backend',
+        'gcr.io/$PROJECT_ID/backend-134',
         '--region',
         'us-central1',
         '--platform',
