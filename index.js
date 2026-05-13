@@ -35,7 +35,7 @@ require("./schema/Note"); // Untuk generate Tabel Notes
 app.use("/api/v1/notes", noteRoutes); // Untuk setting routes note
 
 // Sync Database dan Jalankan Server
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 sequelize.sync().then(() => {
   console.log("Database synced");
   app.listen(port, () => console.log(`Server running on port ${port}`));
